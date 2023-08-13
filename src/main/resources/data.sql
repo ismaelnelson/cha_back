@@ -8,4 +8,4 @@ SELECT '2', 'USER'
 
 INSERT INTO `railway`.`users` (`id`, `email`, `name`, `nick`,`photo`,`password`,`roles`)
 SELECT '1','admin@chakruk.com','ADMIN','ADMIN','rey-animal.png','$2a$10$iY0.yv579OFity1Hqy2ybe6YBEsV7QrSOzOl8F1GhKjwjlBTG3nzO','1'
-    WHERE NOT EXISTS (SELECT 1 FROM `chakruk`.`users` WHERE `id` = '1');
+    WHERE NOT EXISTS (SELECT 1 FROM `railway`.`users` WHERE `id` = '1');
